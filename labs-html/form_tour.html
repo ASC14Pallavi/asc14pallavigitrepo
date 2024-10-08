@@ -7,6 +7,9 @@
         .CONTAINER {
             margin-left: 35%;
         }
+        .buton{
+            padding-left: 35%;
+        }
     </style>
 </head>
 <body>
@@ -19,26 +22,28 @@
     <div class="CONTAINER">
         <form id="travelForm" style="background-color: lavender; border: 1px solid black; display: inline-block; font-style: normal;">
             <br><br/>
-            Name:&nbsp;<input type="text" name="name"><br><br/>
-            Address:&nbsp;<textarea name="address" rows="2" cols="10"></textarea><br><br/>
-            Number of days:&nbsp;<input type="range" name="days" min="0" max="10"><br><br/>
-            Email:&nbsp;<input type="email" name="email" placeholder="you@yourdomain.com"><br><br/>
-            Password:&nbsp;<input type="password" name="password"><br><br/>
-            Phone number:&nbsp;<input type="tel" name="phone"><br><br/>
+            Name              :&nbsp;<input type="text" name="name"><br><br/>
+            Address           :&nbsp;<textarea name="address" rows="2" cols="10"></textarea><br><br/>
+            Number of days    :&nbsp;<input type="range" name="days" min="0" max="10"><br><br/>
+            Email             :&nbsp;<input type="email" name="email" placeholder="you@yourdomain.com"><br><br/>
+            Password          :&nbsp;<input type="password" name="password"><br><br/>
+            Phone number      :&nbsp;<input type="tel" name="phone"><br><br/>
             Search destination:&nbsp;<input type="search" name="destination" placeholder="where to"><br><br/>
-            Gender:&nbsp;<input type="radio" name="gender" value="male">Male
+            Gender            :&nbsp;<input type="radio" name="gender" value="male">Male
             <input type="radio" name="gender" value="female">Female<br><br/>
-            Mode of transport:&nbsp;<input type="checkbox" name="transport" value="cab">cab
+            Mode of transport :&nbsp;<input type="checkbox" name="transport" value="cab">cab
             <input type="checkbox" name="transport" value="bus">bus
             <input type="checkbox" name="transport" value="train">train<br><br/>
-            Mode of payment:&nbsp;<select name="payment">
+            Mode of payment   :&nbsp;<select name="payment">
                 <option value="upi">Upi</option>
                 <option value="credit">credit card</option>
                 <option value="debit">debit card</option>
             </select><br><br/>
-            Submit:&nbsp;<input style="background-color: azure; font-style: italic;" type="submit" value="submit me! "><br><br/>
-            Date:&nbsp;<input type="date" name="date"><br><br/>
-            Refresh:&nbsp;<input type="reset" value="clear form">
+            Date              :&nbsp;<input type="date" name="date"><br><br/>
+            <div class="buton">
+            <input style="background-color: azure; font-style: italic; " type="submit" value="submit me!  "><br><br/>
+            <input style="color:brown; background-color: aquamarine;" type="reset" value="clear form">
+            </div>
         </form>
     </div>
     <div>
