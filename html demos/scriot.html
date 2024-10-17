@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="external.js"></script>
+    <script>
+        function InternalScript(){
+           console.log("the internal script");
+        }
+    </script>
+    <script>
+        console.log("i!")
+        InternalScript();
+    </script>
+    
+</head>
+<body>
+    <form>
+    <button onclick="alert('welcone js');">Get Message</button>
+    <button onclick='alert("Thank you");console.log("thank you")'>say thankyou</button>
+    <button onclick="InternalScript()">Internal</button>"
+    <button  type="button" onclick="InternalScript()">Internal</button>"
+    </form>
+</body>
+</html>

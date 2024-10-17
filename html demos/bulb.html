@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>toggle bulb</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 50px;
+            transition: background-color 0.3s;
+        }
+        .bulb{
+            width: 250px;;
+            height: 250px;
+            margin: 20px auto;
+            position: relative;
+            cursor: pointer;
+        }
+        .bulb.on{
+            background-image: url("on1.png");
+            background-size: cover;
+        }
+        .bulb.off{
+            background-image: url("off.png") ;
+            background-size:cover;
+        }
+        .dark-bg {
+            background-color: black;
+        }
+        .light-bg {
+            background-color: white;
+        }
+        .hidden {
+            display:none;
+        }
+    </style>
+</head>
+<body class="light-bg">
+    <div id="bulb1" class="bulb on"></div>
+    <div id="bulb2" class="bulb off"></div>
+
+    <script>
+        document.getElementById('bulb1').addEventListener('click', function() {
+            this.classList.add('hidden');
+            //document.body.classList.add('dark-bg');
+            //document.body.classList.remove('light-bg');
+        });
+
+        document.getElementById('bulb2').addEventListener('click', function() {
+            const newBulb = document.createElement('div');
+            newBulb.className = 'bulb off';
+            document.body.appendChild(newBulb);
+            newBulb.addEventListener('click', function() {
+                const thisBulb = this;
+                //thisBulb.classList.add('hidden');
+                //document.body.classList.add('dark-bg');
+                //document.body.classList.remove('light-bg');
+            });
+        });
+    
+        </script>   
+</body>
+</html>
