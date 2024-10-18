@@ -4,15 +4,9 @@
 ## Support 
 ## My Contribution
 
-#  Week 2:
-## Learning 
-### typescript:any keyword,type inference,create .js file using ts-node,built app to add,remove,edit product,developed to-do api
-### git :to change username in already created git account
-## Challenges:to add search option in .ts file and to use ts command
-## Support :for improving syntax
-## My Contribution:
-## Week 2:
-### 📚 Learning
+
+# Week 2:
+## 📚 Learning
 - **TypeScript**:
   - 📝 `any` keyword
   - 🕵️‍♀️ Type inference
@@ -22,12 +16,12 @@
 - **Git**:
   - 🔄 Changed username in an already created Git account
 
-### 🚧 Challenges
+## 🚧 Challenges
 - 🔍 Adding a search option in .ts file
 - 💻 Using ts commands
 
-### 🤝 Support
+## 🤝 Support
 - 🆙 Improving syntax
 
-### 🌟 My Contribution
+## 🌟 My Contribution
 - 🎨 Added some icons
