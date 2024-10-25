@@ -46,7 +46,7 @@
 - 🆙 improved in the field of angular
 - learnt to use ng commands
 - learnt to create component
-- differnce in acessig image through source file and making it accessiable through public
+- differnce in acessing image through source file and making it accessiable through public
 - tried crud operations using typscript in angular
 
 ## 🌟 strength
