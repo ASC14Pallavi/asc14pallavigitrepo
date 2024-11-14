@@ -1,0 +1,47 @@
+<form [formGroup]="addIssueForm" (ngSubmit)="onSubmit()" class="p-4 shadow rounded">
+    <h2>Add Issues</h2>
+    <div class="form-group">
+        <label for="id">id</label>
+        <input type="text" id="id" formControlName="id" class="form-control">
+      </div>
+    <div class="form-group">
+      <label for="Title">title</label>
+      <input type="text" id="Title" formControlName="Title" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="Description">Description</label>
+      <input type="text" id="Description" formControlName="Description" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="Priority">Priority</label>
+      <select id="Priority" formControlName="Priority" class="form-control">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="Status">Status</label>
+      <select id="Status" formControlName="Status" class="form-control">
+        <option value="To Do">To Do</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+      </select>
+    </div>
+
+  
+    <div class="form-group">
+      <label for="Assignee">Assignee</label>
+      <input type="text" id="Assignee" formControlName="Assignee" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="date">date</label>
+        <input type="date" id="date" formControlName="date" class="form-control">
+    </div>
+      <br>
+    <button type="submit" [disabled]="addIssueForm.invalid" class="btn btn-primary">Add Issue</button>
+  </form>
+  

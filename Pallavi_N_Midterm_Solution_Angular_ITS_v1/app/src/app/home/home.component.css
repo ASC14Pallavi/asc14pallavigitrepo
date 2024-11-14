@@ -1,0 +1,35 @@
+
+.home-container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-container h1 {
+    font-size: 3em;
+    color: #2a3d4f;
+    margin-bottom: 20px;
+  }
+  
+  .home-container .lead {
+    font-size: 1.5em;
+    color: #606f7b;
+    margin-bottom: 40px;
+  }
+  
+  .home-buttons button {
+    margin: 10px;
+    font-size: 1.2em;
+  }
+  
+  .home-buttons .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .home-buttons .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  

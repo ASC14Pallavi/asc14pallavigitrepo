@@ -1,0 +1,40 @@
+<div class="container">
+    <br>
+    <h5>Issue Details</h5>
+    <div class="mb-3">
+      <input [(ngModel)]="searchQuery" (input)="searchIssues()" class="form-control" placeholder="Search by title or ID" />
+    </div>
+    <div>
+      <div class="table-striped" style="width:100%">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Issue Title</th>
+              <th>Description</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Assignee</th>
+              <th>date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let issue of issues">
+              <td>{{ issue.id }}</td>
+              <td>{{ issue.Title }}</td>
+              <td>{{ issue.Description }}</td>
+              <td>{{ issue.Priority }}</td>
+              <td>{{ issue.Status }}</td>
+              <td>{{ issue.Assignee }}</td>
+              <td>{{ issue.date }}</td>
+              <td>
+               <button (click)="deleteIssue(issue)" class="btn btn-danger">Delete</button>  &nbsp;
+                <button (click)="updateIssue(issue.id)" class="btn btn-warning">Update</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

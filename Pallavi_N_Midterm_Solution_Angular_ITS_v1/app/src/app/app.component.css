@@ -1,0 +1,63 @@
+
+  /* Navbar */
+  .navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #b0bec5;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #fff;
+    background-color: #0288d1;
+    border-radius: 5px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #0288d1;
+  }
+
+  /* Card Styling for Main Content */
+  .card {
+    border-radius: 15px;
+  }
+
+  .card-body {
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Adjustments for responsive layouts */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.8rem;
+    }
+    
+    .card {
+      margin-top: 20px;
+    }
+  }
+
+  /* Icon Styling */
+  .bi {
+    margin-right: 8px;
+  }
+
+
+ 
