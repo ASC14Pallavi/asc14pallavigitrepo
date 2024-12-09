@@ -13,13 +13,16 @@ public class CirculationService {
     @Autowired
     private CirculationRepository circulationRepository;
 
+    private int lastGeneratedNumber = 0;  // Track the last generated number
+
     public List<Circulation> getAllCirculations() {
         return circulationRepository.findAll();
     }
 
     public Circulation saveCirculation(Circulation circulation) {
+        // If ID is not provided, generate it
         if (circulation.getId() == null || circulation.getId().isEmpty()) {
-            circulation.setId(generateId());
+            circulation.setId(generateId());  // Generate ID if not provided
         }
         return circulationRepository.save(circulation);
     }
@@ -41,10 +44,19 @@ public class CirculationService {
         circulationRepository.delete(circulation);
     }
 
+    // Auto-increment ID generation method
     private String generateId() {
-        long count = circulationRepository.count() + 1;
-        return "CIR" + String.format("%03d", count);
+        // Increment the number each time a new ID is generated
+        lastGeneratedNumber++;
+
+        // Format the number as a 3-digit string (e.g., "001", "002", etc.)
+        String formattedNumber = String.format("%03d", lastGeneratedNumber);
+
+        // Generate the ID: "A" + 3-digit number (e.g., "A001", "A002", ...)
+        return "A" + formattedNumber;
     }
 }
+
+
 
 
