@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "target": "ES2018",
-        "outDir": "typescriptapp/dist",
-        "rootDir": "typescriptapp/src",
-        "module": "CommonJS"
-    }
-}
